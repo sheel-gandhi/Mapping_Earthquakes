@@ -45,7 +45,7 @@ cityData.forEach(function(city) {
     L.circleMarker(city.location, {
         lineweight: 4,
         color: "orange",
-        fillColor: "orange",
+        fillColor: "black",
         radius: (city.population - 200000) / 100000
     })
     .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
